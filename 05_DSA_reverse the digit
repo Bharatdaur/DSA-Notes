@@ -1,0 +1,61 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main(){
+    //revesing the no.
+    // int ans=0;
+    // int x;
+    // cin>>x;
+
+    // while (x!=0)
+    // {
+    //    int digit = x % 10;
+    //    ans = (ans * 10) + digit;
+    //    x = x / 10;
+    // }
+
+    // cout<<"The Reversed number is "<<ans<<endl;
+    // return 0;
+
+    //  Compliment of base 10
+//     int n;
+//     cin>> n;
+//     int m = n;
+//     int mask = 0;
+    
+//     if (n==0)
+//     cout<< "1" ; 
+//     else
+//     {
+          
+//     while (m!=0)
+//     {
+//     mask = (mask<<1) |1;
+//     m = m>>1;
+//     }
+//     int ans = (~n) & mask;
+//     cout<<ans;
+//     }
+//     return 0;
+
+// }
+
+    // Power of two
+    int n;
+    cin>>n;
+    int ans = 1;
+
+    for (int i = 0; i <= 30; i++)
+    {
+        if (ans==n)
+        {
+            cout<<"True" ;
+        }
+       ans = ans*2;
+      
+    } 
+    
+    return 0;
+}
+    
