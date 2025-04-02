@@ -1,0 +1,222 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    // int n;
+    // cin>>n;
+    // int i=1;
+    // while (i<=n)
+    // {
+    //     int j=1;
+    //     while (j<=n)
+    //     {
+    //       cout<< j;
+    //     j=j+1;  
+    //     }
+    //     cout<<endl;
+    //     i=i+1;
+    // }  
+
+    // int n;
+    // cin>>n;
+    // int count=1;
+    // int i=1;
+    // while (i<=n)
+    // {
+    //     int j=1;
+    //     while (j<=n)
+    //     {
+    //       cout<< count<<" ";
+    //       count=count+1;
+    //     j=j+1;  
+    //     }
+    //     cout<<endl;
+    //     i=i+1;
+    // }  
+
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while (row<=n)
+    // {
+    //     int clm=1;
+    //     while (clm<=row)
+    //     {
+    //       cout<< row;
+    //     clm=clm+1;  
+    //     }
+    //     cout<<endl;
+    //     row=row+1;
+    // }  
+
+    // int n;
+    // cin>>n;
+    // int count = 1;
+    // int row=1;
+    // while (row<=n)
+    // {
+    //     int clm=1;
+    //     while (clm<=row)
+    //     {
+    //       cout<< count<< " ";
+    //     count = count + 1;
+    //     clm=clm+1;  
+    //     }
+    //     cout<<endl;
+    //     row=row+1;
+    // }  
+
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while (row<=n)
+    // {
+    //     int clm=1;
+    //     while (clm<=row)
+    //     {
+    //       cout<<row-clm+1<<" "; // for reversing it use cout<<row+clm-1..
+        
+    //     clm = clm+1;  
+    //     }
+    //     cout<<endl;
+    //     row=row+1;
+    // }  
+
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while (row<=n)
+    // {
+    //     int clm=1;
+    //  char ch = 'A'+ row-1;
+    //     while (clm<=n)
+    //     {
+    //       cout<< ch<<" ";
+        
+    //     clm = clm+1;  
+    //     }
+    //     cout<<endl;
+    //     row=row+1;
+    // }  
+
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while (row<=n)
+    // {
+    //     int clm=1;
+    //     while (clm<=n)
+    //     {
+    //     char bt = 'A' + clm-1;
+    //     cout<< bt <<" ";
+    //     clm = clm+1;  
+    //     }
+    //     cout<<endl;
+    //     row=row+1;
+    // }
+
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while (row<=n)
+    // {
+    //     int clm=1;
+    //     while (clm<=row)
+    //     {
+    //     char bt = 'A' + clm-1;
+    //     cout<< bt <<" ";
+    //     clm = clm+1;  
+    //     }
+    //     cout<<endl;
+    //     row=row+1;
+    // }
+
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while (row<=n)
+    // {
+    //     int clm=1;
+    //     while (clm<=row)
+    //     {
+    //     char bt = 'A'+row+clm-2;
+    //     cout<< bt <<" ";
+    //     clm = clm+1;  
+    //     }
+    //     cout<<endl;
+    //     row=row+1;
+    // }
+
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while (row<=n)
+    // {
+    //     int clm=1;
+    //     char start = 'A'+n-row;
+    //     while (clm<=row)
+    //     {
+    //     cout<< start <<" ";
+    //     start = start+1;
+    //     clm = clm+1;  
+    //     }
+    //     cout<<endl;
+    //     row=row+1;
+    // }
+    // return 0;
+
+    // int n;
+    // cin>>n;
+    // int row=1;
+    // while (row<=n)
+    // {
+    //   // phle space print karlo
+    //     int space=n-row;
+    //     while (space)
+    //     {
+    //     cout<<" ";
+    //     space=space-1;  
+    //     }
+    //   // phir star print karlo  
+    //   int col=1;
+    //   while (col<=row)
+    //   {
+    //     cout<<"*";
+    //     col=col+1;
+    //   }
+    //   cout<<endl;
+    //   row=row+1;
+    // }
+
+    int n;
+    cin>>n;
+    int row=1;
+    while (row<=n)
+    {
+      // phle space print karlo
+        int space=n-row;
+        while (space)
+        {
+        cout<<" ";
+        space=space-1;  
+        }
+      // phir second tiangle print karlo  
+      int col=1;
+      while (col<=row)
+      {
+        cout<<col;
+        col=col+1;
+      }
+      // phir third triangle print karlo
+      int start = row - 1;
+      while (start)
+      {
+        cout<<start;
+        start=start-1;
+      }
+      
+      cout<<endl;
+      row=row+1;
+    }
+    return 0;
+}
